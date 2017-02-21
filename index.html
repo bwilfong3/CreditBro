@@ -30,26 +30,26 @@
 
 
 			<div id="calculateFields">
-				Monthly Budget: <span class="dollar">$</span><input type="number" class="budgetField"><br>
+				Monthly Budget: <span class="dollar">$</span><input type="number" class="budgetField" value=200><br>
 			</div>
 
 			<div id="cardHolder">
 				<div id="defaultCard" class="creditCard">
 					<form>
-						Card Name:<input type="text" class="titleField"><br>
-						Balance:<input type="number" class="balanceField"><br>
-						APR:<input type="number" class="aprField"><br>
-						Minimum Payment:<input type="number" class="minPayField"><br>
+						Card Name:<input type="text" class="titleField" value="Test Card"><br>
+						Balance:<input type="number" class="balanceField" value=1000><br>
+						APR:<input type="number" class="aprField" value=22.99><br>
+						Minimum Payment:<input type="number" class="minPayField" value=35><br>
 					</form>
 					<span class="close" onClick=deleteCard(this)></span>
 				</div>
 			</div>
 
-			<select name="cars">
-  			<option value="">Volvo</option>
-  			<option value="saab">Saab</option>
-  			<option value="fiat">Fiat</option>
-  			<option value="audi">Audi</option>
+			<select class="styled-select" name="algorithms">
+  			<option value="hbf">Highest Balance First</option>
+  			<option value="hif">Highest Interest First</option>
+  			<option value="lbf">Lowest Balance First</option>
+  			<option value="lif">Lowest Interest First</option>
 			</select>
 
 			<button onClick="calculate()" class="paymentButton">

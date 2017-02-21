@@ -116,6 +116,36 @@ h2{
 	background-color: white;
 }
 
+select::-ms-expand {
+    display: none;
+}
+
+.styled-select {
+  background: url("./images/selectarrow.png") no-repeat 96% 0;
+  height: 35px;
+  overflow: hidden;
+  width: 250px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	border-radius: 20px;
+	background-color: #656eca;
+	color:white;
+	font-size: 20px;
+	padding-left:10px;
+	display: block;
+}
+
+.styled-select select {
+  background: transparent;
+  border: none;
+ 	font-size: 14px;
+  height: 29px;
+  padding: 5px; /* If you add too much padding here, the options won't show in IE */
+	width: 268px;
+}
+
 #introduction {
 	width:80%;
 	margin-top: 15px;
