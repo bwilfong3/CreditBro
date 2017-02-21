@@ -1,0 +1,69 @@
+<head>
+	<title> Minimize your interest with Credit Bro </title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="icon" type="image/svg" href="./images/smallicon.png">
+	<script type="text/javascript" src="./lib/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="logic.js"></script>
+	<script type="text/javascript" src="creditmath.js"></script>
+	<link rel="stylesheet" type="text/css" href="toggletable.css">
+	<script type="text/javascript" src="toggletable.js"></script>
+</head>
+
+<body>
+	<center>
+		<div class="headerIcon"></div>
+
+		<h1> Welcome to CreditBro.com! </h1>
+
+		<div class="content">
+
+
+			<div id="introduction">
+				Here at CreditBro.com, we know how important it is to pay off your credit cards quickly. Your debt utilization
+				ratio (how much you use vs your total limit) accounts for 30% of your credit score! Thus, it is important to
+				pay off your credit cards as quickly as possible, while paying the minimum amount of interest. </h3>
+			</div>
+
+
+			<button class="addButton" onClick=addCard()>+</button>
+			<h2> Add a credit card </h2>
+
+
+			<div id="calculateFields">
+				Monthly Budget: <span class="dollar">$</span><input type="number" class="budgetField"><br>
+			</div>
+
+			<div id="cardHolder">
+				<div id="defaultCard" class="creditCard">
+					<form>
+						Card Name:<input type="text" class="titleField"><br>
+						Balance:<input type="number" class="balanceField"><br>
+						APR:<input type="number" class="aprField"><br>
+						Minimum Payment:<input type="number" class="minPayField"><br>
+					</form>
+					<span class="close" onClick=deleteCard(this)></span>
+				</div>
+			</div>
+
+			<select name="cars">
+  			<option value="">Volvo</option>
+  			<option value="saab">Saab</option>
+  			<option value="fiat">Fiat</option>
+  			<option value="audi">Audi</option>
+			</select>
+
+			<button onClick="calculate()" class="paymentButton">
+				Calculate Monthly Payments
+			</button>
+
+			<div id="resultsDiv">
+				<!-- The following will be replaced so that it shows a table per credit card with the payment plan -->
+				<ul class="tab" id="tabdiv"> <!-- dynamically load this div here when the wallet is obtained -->
+					<!-- openCity() (or showTable()) should create the table for the given div below -->
+			  		<li><a href="javascript:void(0)" class="tablinks">Your Credit Card Repayment Plan Will Be Displayed Here...</a></li>
+				</ul>
+			</div>
+		</div>
+
+	</center>
+</body>

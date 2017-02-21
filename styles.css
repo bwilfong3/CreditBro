@@ -1,0 +1,126 @@
+body {
+	background: url("./images/cbbg2draw.svg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+h1 {
+	color:white;
+	display:inline-block;
+}
+
+.headerIcon {
+	height: 25%;
+	width: 25%;
+	display:inline;
+	background-image: url("./images/cbbg2draw.svg");
+}
+
+h2{
+	display:inline;
+}
+.addButton {
+	display:inline;
+	margin: 15px;
+	width: 50px;
+	height: 50px;
+	border: 5px solid #4779d1;
+	border-radius: 25px;
+	color:white;
+	background-color: #4779d1;
+	opacity: 0.85;
+	font-size: 35px;
+}
+
+.addButton:hover {
+	color: #4779d1;
+	background-color: white;
+}
+
+.content {
+	width:95%;
+	height: 85%;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 25px;
+	overflow-y: auto;
+	padding-bottom: 25px;
+}
+
+.creditCard {
+	width: 20%;
+	clear: both;
+	padding:25px;
+	margin:20px;
+	position: relative;
+  display: inline-block;
+	background-color: #f9f9f9;
+	border-radius: 25px;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+.creditCard input {
+	width: 100%;
+	clear: both;
+}
+
+.close:before {
+    content: 'X';
+}
+.close {
+    position: absolute;
+    top: 5;
+    right: 10;
+    cursor: pointer;
+}
+
+.budgetField, .titleField, .balanceField, .aprField, .minPayField {
+		background-color: transparent;
+		color: #black;
+		outline: none;
+		outline-style: none;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+		border-bottom: solid #cccccc 1px;
+		padding: 3px 10px;
+		margin-bottom: 10px;
+}
+
+.budgetField {
+	border-bottom: solid #aaaaaa 1px;
+	background-color: transparent;
+	font-size: 30px;
+	color: #black;
+	width:100px;
+}
+
+.dollar {
+	font-size: 30px;
+}
+
+.paymentButton {
+	margin:15px;
+	border: 5px solid #4779d1;
+	border-radius: 25px;
+	color:white;
+	background-color: #4779d1;
+	opacity: 0.85;
+	font-size: 20px;
+}
+
+.paymentButton:hover {
+	color: #4779d1;
+	background-color: white;
+}
+
+#introduction {
+	width:80%;
+	margin-top: 15px;
+}
+
+#cardHolder {
+	width:70%;
+}
