@@ -32,10 +32,10 @@ ul.tab li a:focus, .active {background-color: #ccc;}
 /* Style the tab content */
 .tabcontent {
     display: none;
-    padding: 6px 12px;
+    padding: 6px 0px;
     border: 1px solid #ccc;
     border-top: none;
-    width:48.5%;
+    width:50%;
     height:25%;
     overflow: auto;
 }
@@ -44,6 +44,8 @@ table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
+    background-color:white;
+    opacity:0.8;
 }
 
 td, th {
