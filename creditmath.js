@@ -251,6 +251,11 @@ function addTable(creditCard){
 
   centerDiv.appendChild(tableDiv);
 
+	$(".tablinks")[0].click(); // opens up the first CC for viewing
+
+	$('#content').stop().animate({
+  	scrollTop: $('#content')[0].scrollHeight }, 800);
+
 }
 
 function setCookie(wallet) {
