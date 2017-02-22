@@ -19,10 +19,11 @@ h1 {
 	background-image: url("./images/cbbg2draw.svg");
 }
 
-h2{
+h2 {
 	display:inline;
 	margin-right:15px;
 }
+
 .addButton {
 	display:inline;
 	margin: 15px;
@@ -107,6 +108,11 @@ h2{
 	opacity: 0.85;
 	font-size: 20px;
 	box-shadow: 10px 10px 5px #888888;
+}
+
+.paymentButton:hover {
+	background-color: white;
+	color:#4779d1;
 }
 
 select::-ms-expand {
