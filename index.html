@@ -24,10 +24,10 @@
 				pay off your credit cards as quickly as possible, while paying the minimum amount of interest. </h3>
 			</div>
 
-
-			<button class="addButton" onClick=addCard()>+</button>
-			<h2> Add a credit card </h2>
-
+			<div id="addDiv" onClick=addCard() onmouseover="toggleButton()" onmouseout="toggleButton()">
+				<button class="addButton" id="addButton">+</button>
+				<h2> Add a credit card </h2>
+			</div>
 
 			<div id="calculateFields">
 				Monthly Budget: <span class="dollar">$</span><input type="number" class="budgetField" value=200><br>

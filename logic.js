@@ -1,6 +1,7 @@
 var numberOfCards = 1;
 var cardId = 0;
 var selection = 0;
+var buttonOn = false;
 
 window.setInterval(function(){
 	switch(selection){
@@ -53,4 +54,19 @@ function deleteCard(card){
 		numberOfCards--;
 		console.log(numberOfCards);
 	}
+}
+
+function toggleButton(){
+	if(!buttonOn) {
+		$("#addButton").css("color", "#4779d1");
+		$("#addButton").css("background-color", "white");
+	}
+
+	else{
+		$("#addButton").css("color", "white");
+		$("#addButton").css("background-color", "#4779d1");
+	}
+
+	buttonOn = !buttonOn;
+
 }
